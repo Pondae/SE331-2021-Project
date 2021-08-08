@@ -1,4 +1,6 @@
 <template>
+
+
 <div class="list">
     <card v-for="patient in patients" :key="patient.id" :patient="patient">{{patient.name}} {{patient.surname}} </card>
 </div>
@@ -34,3 +36,4 @@ export default {
     flex-direction: column;
 }
 </style>
+
