@@ -1,24 +1,5 @@
-# se331-2021-project
+Thitisan Chailuek, 622115017
+Phonmongkhon Phuthijaem, 622115026
+Pasakon Paingjai, 622115028
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+URL:
