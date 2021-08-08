@@ -157,6 +157,14 @@
             "age": "30",
             "home_town": "Noeth Korea",
             "is_vaccinated":false
+        },
+        {
+            "id":"12",
+            "name": "OreO2",
+            "surname": "number2",
+            "age": "31",
+            "home_town": "Mars",
+            "is_vaccinated":false
         }
     ]
 }
