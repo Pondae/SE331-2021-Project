@@ -5,6 +5,6 @@
 
 <script>
 export default {
-  props: ['patient']
-}
+  props: ["patient"],
+};
 </script>

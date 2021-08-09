@@ -3,6 +3,7 @@
     <card v-for="patient in patients" :key="patient.id" :patient="patient"
       >{{ patient.name }} {{ patient.surname }}
     </card>
+
   
   <div class="page_change">
     <router-link
@@ -22,11 +23,13 @@
       next</router-link
     >
   </div>
+
   </div>
 </template>
 <script>
 import api from "@/services/patient_api.js";
 import card from "@/components/PatientCard.vue";
+
 import { watchEffect } from "@vue/runtime-core";
 export default {
   name: "list",
@@ -36,12 +39,14 @@ export default {
       required: true,
     },
   },
+
   components: {
     card,
   },
   data() {
     return {
       patients: null,
+
       total_page: 0,
       size: 4,
     };
@@ -64,6 +69,7 @@ export default {
       let total = Math.ceil(this.total_page / this.size);
       return this.page < total;
     },
+
   },
 };
 </script>
@@ -72,6 +78,7 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+
 }
 #next {
   text-align: right;
@@ -87,6 +94,6 @@ export default {
   flex: 1;
   text-decoration: none;
   color: pink;
+
 }
 </style>
-
