@@ -15,4 +15,7 @@ export default {
   get_patient_id(id) {
     return patient_api.get("/patient/" + id);
   },
+  getData() {
+    return patient_api.get("/over_all");
+  },
 };
