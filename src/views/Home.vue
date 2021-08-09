@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <br>
+    <Static :covid="covid"/>
+    <br><br>
+    <div class="details">
+      Our website have objective to give you an information of covid-19,<br>
+      including the people who vancinated, a total of vaccine doses.
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Static from '@/components/Static.vue'
+import Covid from '@/services/patient_api.js'
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    Static
   },
+  data(){
+    return {
+      covid: null
+    }
+  },
+  created() {
+        Covid.get_all_patient()
+        .then(response => {
+            this.covid = response.data
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    },
 };
 </script>
