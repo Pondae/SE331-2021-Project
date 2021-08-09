@@ -25,7 +25,7 @@ export default {
     }
   },
   created() {
-        Covid.get_all_patient()
+        Covid.getData()
         .then(response => {
             this.covid = response.data
         })
