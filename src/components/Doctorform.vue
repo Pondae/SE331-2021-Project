@@ -5,31 +5,54 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
     crossorigin="anonymous"
   />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <form class="review-form" @submit.prevent="onSubmit">
+
+  <form @submit.prevent="onSubmit">
     <h3 id="toptext">Leave a doctor’s comments</h3>
-    <div class="form-group">
-      <label for="name">Topic:</label>
-      <input id="name" v-model="topic" />
+    <div class="form-group row" id="topic">
+      <div class="col-sm-2"></div>
+      <label class="col-sm-2 col-form-label">Topic:</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" v-model="topic" />
+      </div>
     </div>
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input id="name" v-model="name" />
+    <div class="form-group row" id="name">
+      <div class="col-sm-2"></div>
+      <label class="col-sm-2 col-form-label">Name:</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" v-model="name" />
+      </div>
     </div>
-    <div class="form-group">
-      <label for="review">Review:</label>
-      <textarea id="review" v-model="review"></textarea>
+    <div class="form-group row" id="recommend">
+      <div class="col-sm-2"></div>
+      <label class="col-sm-2 col-form-label">Recommend:</label>
+      <div class="col-sm-5">
+        <textarea type="text" class="form-control" v-model="recommend" />
+      </div>
     </div>
-    <div class="form-group">
-      <label for="recommend">Recommend:</label>
-      <textarea id="recommend" v-model="recommend"></textarea>
+    <br/>
+    <div class="row">
+       <div class="col-sm-7"></div>
+        &nbsp;&nbsp;
+      <div class="col-sm-2">
+        <button type="submit" class="btn btn-primary mb-2">
+          Confirm identity
+        </button>
+      </div>
     </div>
-    <input class="button" type="submit" value="submit" />
   </form>
 </template>
 <style scoped>
+#topic {
+  padding: 0.1cm;
+}
+#name {
+  padding: 0.1cm;
+}
+#recommend {
+  padding: 0.1cm;
+}
 #toptext {
-  margin-top: 1cm;
+  margin-top: 0.5cm;
 }
 </style>
 <script>
@@ -44,25 +67,18 @@ export default {
   },
   methods: {
     onSubmit() {
-      if (
-        this.topic === "" ||
-        this.name === "" ||
-        this.review === "" ||
-        this.recommend === ""
-      ) {
+      if (this.topic === "" || this.name === "" || this.recommend === "") {
         alert("Comment is incomplete. Please full");
         return;
       }
       let doctorcomment = {
         topic: this.topic,
         name: this.name,
-        review: this.review,
         recommend: this.recommend,
       };
       this.$emit("comment-submited", doctorcomment);
       this.topic = "";
       this.name = "";
-      this.review = "";
       this.recommend = "";
     },
   },
