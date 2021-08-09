@@ -8,26 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <form class="review-form" @submit.prevent="onSubmit">
     <h3 id="toptext">Leave a doctor’s comments</h3>
-     <div class="form-group">
-          <label for="name">Topic:</label>
-          <input id="name" v-model="topic" />
-     </div>
-       <div class="form-group">
-          <label for="name">Name:</label>
-          <input id="name" v-model="name" />
-        </div>
-       <div class="form-group"> 
-          <label for="review">Review:</label>
-          <textarea id="review" v-model="review"></textarea>
-       </div>
-       <div class="form-group">
-          <label for="recommend">Recommend:</label>
-          <textarea id="recommend" v-model="recommend"></textarea>
-       </div>
-      <input class="button" type="submit" value="submit" />
-   
+    <div class="form-group">
+      <label for="name">Topic:</label>
+      <input id="name" v-model="topic" />
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input id="name" v-model="name" />
+    </div>
+    <div class="form-group">
+      <label for="review">Review:</label>
+      <textarea id="review" v-model="review"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="recommend">Recommend:</label>
+      <textarea id="recommend" v-model="recommend"></textarea>
+    </div>
+    <input class="button" type="submit" value="submit" />
   </form>
-
 </template>
 <style scoped>
 #toptext {
@@ -36,7 +34,6 @@
 </style>
 <script>
 export default {
-  props: {},
   data() {
     return {
       topic: "",
