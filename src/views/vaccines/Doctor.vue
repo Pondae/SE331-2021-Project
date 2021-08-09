@@ -9,28 +9,21 @@
 
   <div class="card" v-for="com in comments" :key="com.id">
     <div class="card-body">
-      <ul style="list-style-type: none">
-        <li>
-          <b> The Doctor Topic:</b>{{com.topic }}
-          <br />
-          <b> From doctor:</b>{{ com.name }}
-          <br />
-          <b> Recommend:</b>{{ com.recommend }}
-          <br />
-        </li>
-      </ul>
+      <Doctorcommentlist :com="com"/>
     </div>
   </div>
 </template>
 
 <script>
 import Doctorform from "@/components/Doctorform.vue";
+import Doctorcommentlist from "@/components/Doctorcommentlist.vue";
 export default {
   name: "Doctorcomment",
   props: ["patient"],
 
   components: {
     Doctorform,
+    Doctorcommentlist
     // Doctorcommentlist,
   },
   data() {

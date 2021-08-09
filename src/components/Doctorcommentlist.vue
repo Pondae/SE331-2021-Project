@@ -6,12 +6,12 @@
     crossorigin="anonymous"
   />
   <ul style="list-style-type: none">
-    <li v-for="(x, index) in comments" :key="index">
-      <b> The Doctor Topic:</b>{{ x.topic }}
+    <li >
+      <b> The Doctor Topic:</b>{{ com.topic }}
       <br />
-      <b> From doctor:</b>{{ x.name }}
+      <b> From doctor:</b>{{ com.name }}
       <br />
-      <b> Recommend:</b>{{ x.recommend }}
+      <b> Recommend:</b>{{ com.recommend }}
       <br />
     </li>
   </ul>
@@ -20,7 +20,7 @@
 <script>
 export default {
   props: {
-    comments: {
+    com: {
       type: Array,
       required: true,
     },
