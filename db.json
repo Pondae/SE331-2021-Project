@@ -1,16 +1,18 @@
 {
-    "death":2,
-    "hospitalized":13,
-    "total_case":57,
-    "pending":5,
+    "over_all": {
+        "death": 2,
+        "hospitalized": 13,
+        "total_case": 57,
+        "pending": 5
+    },
     "patient": [
         {
-            "id":"1",
+            "id": "1",
             "name": "thitisan",
             "surname": "chailuek",
             "age": "58",
             "home_town": "hawaii",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "pfizer",
@@ -20,12 +22,12 @@
             ]
         },
         {
-            "id":"2",
+            "id": "2",
             "name": "Phonmongkhon",
             "surname": "Phuthijaem",
             "age": "20",
             "home_town": "nan",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "sinovac",
@@ -35,12 +37,12 @@
             ]
         },
         {
-            "id":"3",
+            "id": "3",
             "name": "Pasakon",
             "surname": "Paingjai",
             "age": "30",
             "home_town": "Japan",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "moderna",
@@ -50,12 +52,12 @@
             ]
         },
         {
-            "id":"4",
+            "id": "4",
             "name": "prayut",
             "surname": "jan-O-cha",
             "age": "80",
             "home_town": "Thailand",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "sinovac",
@@ -65,12 +67,12 @@
             ]
         },
         {
-            "id":"5",
+            "id": "5",
             "name": "Thanathon",
             "surname": "juengrundruengkit",
             "age": "32",
             "home_town": "Thailand",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "moderna",
@@ -80,12 +82,12 @@
             ]
         },
         {
-            "id":"6",
+            "id": "6",
             "name": "lalisa",
             "surname": "manoban",
             "age": "30",
             "home_town": "Thailand",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "moderna",
@@ -95,12 +97,12 @@
             ]
         },
         {
-            "id":"7",
+            "id": "7",
             "name": "Kim",
             "surname": "Jisoo",
             "age": "30",
             "home_town": "Korean",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "moderna",
@@ -110,12 +112,12 @@
             ]
         },
         {
-            "id":"8",
+            "id": "8",
             "name": "chadchai",
             "surname": "duangsa-ard",
             "age": "35",
             "home_town": "Thailand",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "moderna",
@@ -125,12 +127,12 @@
             ]
         },
         {
-            "id":"9",
+            "id": "9",
             "name": "Pasakon",
             "surname": "Paingjai",
             "age": "30",
             "home_town": "Japan",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "moderna",
@@ -140,12 +142,12 @@
             ]
         },
         {
-            "id":"10",
+            "id": "10",
             "name": "Pasakon",
             "surname": "Paingjai",
             "age": "30",
             "home_town": "Japan",
-            "is_vaccinated":true,
+            "is_vaccinated": true,
             "vaccine_details": [
                 {
                     "vaccine_name": "moderna",
@@ -155,28 +157,28 @@
             ]
         },
         {
-            "id":"11",
+            "id": "11",
             "name": "OreO",
             "surname": "number1",
             "age": "30",
             "home_town": "Noeth Korea",
-            "is_vaccinated":false
+            "is_vaccinated": false
         },
         {
-            "id":"12",
+            "id": "12",
             "name": "OreO2",
             "surname": "number2",
             "age": "31",
             "home_town": "Mars",
-            "is_vaccinated":false
+            "is_vaccinated": false
         },
         {
-            "id":"13",
+            "id": "13",
             "name": "OreO3",
             "surname": "number3",
             "age": "32",
             "home_town": "Sun",
-            "is_vaccinated":false
+            "is_vaccinated": false
         }
     ]
 }
