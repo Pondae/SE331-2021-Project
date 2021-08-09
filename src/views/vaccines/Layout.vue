@@ -14,6 +14,7 @@
     <router-view :patient="patient" />
   </div>
   <!-- </div> -->
+  
 </template>
 
 <script>

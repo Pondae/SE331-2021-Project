@@ -1,4 +1,8 @@
 {
+    "death":2,
+    "hospitalized":13,
+    "total_case":57,
+    "pending":5,
     "patient": [
         {
             "id":"1",
