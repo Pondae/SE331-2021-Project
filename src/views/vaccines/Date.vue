@@ -119,4 +119,5 @@ export default {
 #divedpage {
   border-right: 3px dotted rgb(156, 170, 220);
 }
+
 </style>

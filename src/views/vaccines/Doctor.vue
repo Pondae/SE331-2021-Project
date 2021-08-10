@@ -5,15 +5,15 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
     crossorigin="anonymous"
   />
-  <Doctorform @comment-submited="addcomment" />
-  <div class="container">
+  <br />
+  <h3 id="toptext">Leave a doctor’s comments</h3>
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-4" v-for="com in comments" :key="com.id">
-        <div class="card">
-          <div class="card-body">
-            <Doctorcommentlist :com="com" />
-          </div>
-        </div>
+      <div class="col-sm-7">
+        <Doctorform @comment-submited="addcomment" />
+      </div>
+      <div class="col-sm-5">
+        <Doctorcommentlist :comments="comments" />
       </div>
     </div>
   </div>
@@ -46,19 +46,12 @@ export default {
 };
 </script>
 <style scoped>
-.card {
-  align-items: center;
-  margin-top: 0.2cm;
-  transition: 0.3s;
-  display: flex;
-  border-radius: 1px black;
-  flex-direction: column;
-  align-items: center;
-}
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.col-sm-4 {
-  margin-top: 0.2cm;
+/* .col-sm-5 {
+  margin-right: auto;
+} */
+
+
+#toptext {
+  margin-top: 0.5cm;
 }
 </style>

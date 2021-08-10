@@ -1,6 +1,6 @@
 <template>
-  <form @submit.prevent="onSubmit">
-    <h3 id="toptext">Leave a doctor’s comments</h3>
+<br>
+  <form id="bigform" @submit.prevent="onSubmit">
     <div class="form-group row" id="topic">
       <div class="col-sm-2"></div>
       <label class="col-sm-2 col-form-label">Topic:</label>
@@ -24,11 +24,11 @@
     </div>
     <br />
     <div class="row">
-      <div class="col-sm-7"></div>
+      <div class="col-sm-5"></div>
       &nbsp;&nbsp;
-      <div class="col-sm-2">
+      <div class="col-sm-4">
         <button type="submit" class="btn btn-primary mb-2">
-          Confirm identity
+          Post sugguestion
         </button>
       </div>
     </div>
@@ -46,6 +46,9 @@
 }
 #toptext {
   margin-top: 0.5cm;
+}
+#bigform{
+  margin-right:2cm ;
 }
 </style>
 <script>
