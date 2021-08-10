@@ -1,5 +1,5 @@
 <template>
-<br>
+  <br />
   <ul id="hide">
     <li><b>Vaccine_name:</b> {{ patient.vaccine_details[0].vaccine_name }}</li>
     <li>

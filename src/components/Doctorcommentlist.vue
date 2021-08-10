@@ -5,7 +5,7 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
     crossorigin="anonymous"
   /> -->
-  <h5 id="topicsuggest">List of Sugguestion</h5>
+
   <div class="card" style="width: 100%" v-for="com in comments" :key="com.id">
     <div class="card-body">
       <p class="card-text"><b> The Doctor Topic:</b>{{ com.topic }}</p>
@@ -26,10 +26,6 @@ export default {
 };
 </script>
 <style scoped>
-#topicsuggest {
-  margin-top: 0.2cm;
-  text-align: center;
-}
 .card {
   align-items: center;
   margin-top: 0.2cm;

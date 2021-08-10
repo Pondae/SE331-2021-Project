@@ -1,5 +1,5 @@
 <template>
-<br>
+  <br />
   <form id="bigform" @submit.prevent="onSubmit">
     <div class="form-group row" id="topic">
       <div class="col-sm-2"></div>
@@ -47,9 +47,9 @@
 #toptext {
   margin-top: 0.5cm;
 }
-#bigform{
-  margin-right:2cm ;
-}
+/* #bigform {
+  margin-right: 2cm;
+} */
 </style>
 <script>
 export default {

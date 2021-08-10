@@ -9,10 +9,11 @@
   <h3 id="toptext">Leave a doctor’s comments</h3>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-7">
+      <div class="col-sm-6" id="formming">
         <Doctorform @comment-submited="addcomment" />
       </div>
-      <div class="col-sm-5">
+      <div class="col-sm-6" id="listsuggest">
+        <h5 id="topicsuggest">List of Sugguestion</h5>
         <Doctorcommentlist :comments="comments" />
       </div>
     </div>
@@ -49,8 +50,16 @@ export default {
 /* .col-sm-5 {
   margin-right: auto;
 } */
-
-
+#listsuggest {
+  border: 1px solid rgb(11, 89, 126);
+}
+#formming {
+  /* border: 1px solid rgb(10, 153, 219); */
+}
+#topicsuggest {
+  margin-top: 0.2cm;
+  text-align: center;
+}
 #toptext {
   margin-top: 0.5cm;
 }
