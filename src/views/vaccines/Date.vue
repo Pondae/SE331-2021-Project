@@ -40,7 +40,7 @@
         </ul>
         <br />
         <div id="tex">VACCINES</div>
-        <Vaccinedetail :patient="patient" />
+        <Vaccinedetail :patient="Global_Store.patient" />
         <br />
       </div>
 
@@ -66,6 +66,7 @@
 import Vaccinedetail from "@/components/Vaccinedetail.vue";
 export default {
   props: ["patient"],
+  inject:["Global_Store"],
   components: {
     Vaccinedetail,
   },
