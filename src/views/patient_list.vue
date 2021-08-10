@@ -4,26 +4,24 @@
       >{{ patient.name }} {{ patient.surname }}
     </card>
 
-  
-  <div class="page_change">
-    <router-link
-      :to="{ name: 'list', query: { page: page - 1 } }"
-      rel="prev"
-      id="prev"
-      v-if="page != 1"
-    >
-      prev</router-link
-    >
-    <router-link
-      :to="{ name: 'list', query: { page: page + 1 } }"
-      rel="next"
-      id="next"
-      v-if="has_next_page"
-    >
-      next</router-link
-    >
-  </div>
-
+    <div class="page_change">
+      <router-link
+        :to="{ name: 'list', query: { page: page - 1 } }"
+        rel="prev"
+        id="prev"
+        v-if="page != 1"
+      >
+        prev</router-link
+      >
+      <router-link
+        :to="{ name: 'list', query: { page: page + 1 } }"
+        rel="next"
+        id="next"
+        v-if="has_next_page"
+      >
+        next</router-link
+      >
+    </div>
   </div>
 </template>
 <script>
@@ -69,7 +67,6 @@ export default {
       let total = Math.ceil(this.total_page / this.size);
       return this.page < total;
     },
-
   },
 };
 </script>
@@ -78,7 +75,6 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
 #next {
   text-align: right;
@@ -94,6 +90,5 @@ export default {
   flex: 1;
   text-decoration: none;
   color: pink;
-
 }
 </style>

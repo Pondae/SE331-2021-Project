@@ -6,10 +6,15 @@
     crossorigin="anonymous"
   />
   <Doctorform @comment-submited="addcomment" />
-
-  <div class="card" v-for="com in comments" :key="com.id">
-    <div class="card-body">
-      <Doctorcommentlist :com="com"/>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" v-for="com in comments" :key="com.id">
+        <div class="card">
+          <div class="card-body">
+            <Doctorcommentlist :com="com" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -23,7 +28,7 @@ export default {
 
   components: {
     Doctorform,
-    Doctorcommentlist
+    Doctorcommentlist,
     // Doctorcommentlist,
   },
   data() {
@@ -41,10 +46,19 @@ export default {
 };
 </script>
 <style scoped>
-
 .card {
   align-items: center;
+  margin-top: 0.2cm;
+  transition: 0.3s;
+  display: flex;
+  border-radius: 1px black;
   flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.col-sm-4 {
   margin-top: 0.2cm;
 }
 </style>
