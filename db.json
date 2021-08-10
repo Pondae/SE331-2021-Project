@@ -15,8 +15,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "pfizer",
-                    "vaccinated_date": "12 august 2021",
+                    "vaccine_name": ["pfizer","moderna"],
+                    "vaccinated_date": ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -30,9 +30,9 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "sinovac",
-                    "vaccinated_date": "8 august 2021",
-                    "vaccineated_dose": "8"
+                    "vaccine_name": ["sinovac","sinovac"],
+                    "vaccinated_date":  ["21 july 2021","8 august 2021","30 september 2021"],
+                    "vaccineated_dose": "3"
                 }
             ]
         },
@@ -45,8 +45,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "moderna",
-                    "vaccinated_date": "28 august 2021",
+                    "vaccine_name": ["moderna","moderna"],
+                    "vaccinated_date":  ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -60,8 +60,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "sinovac",
-                    "vaccinated_date": "5 august 2021",
+                    "vaccine_name": ["sinovac","sinovac"],
+                    "vaccinated_date": ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -75,8 +75,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "moderna",
-                    "vaccinated_date": "28 august 2021",
+                    "vaccine_name": ["moderna","moderna"],
+                    "vaccinated_date":  ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -90,8 +90,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "moderna",
-                    "vaccinated_date": "28 august 2021",
+                    "vaccine_name": ["moderna","moderna"],
+                    "vaccinated_date":  ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -105,8 +105,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "moderna",
-                    "vaccinated_date": "28 august 2021",
+                    "vaccine_name": ["moderna","moderna"],
+                    "vaccinated_date":  ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -120,8 +120,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "moderna",
-                    "vaccinated_date": "28 august 2021",
+                    "vaccine_name": ["moderna","moderna"],
+                    "vaccinated_date":  ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -135,8 +135,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "moderna",
-                    "vaccinated_date": "28 august 2021",
+                    "vaccine_name": ["moderna","moderna"],
+                    "vaccinated_date":  ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -150,8 +150,8 @@
             "is_vaccinated": true,
             "vaccine_details": [
                 {
-                    "vaccine_name": "moderna",
-                    "vaccinated_date": "28 august 2021",
+                    "vaccine_name": ["moderna","moderna"],
+                    "vaccinated_date": ["12 august 2021","2 september 2021"],
                     "vaccineated_dose": "2"
                 }
             ]
@@ -162,7 +162,14 @@
             "surname": "number1",
             "age": "30",
             "home_town": "Noeth Korea",
-            "is_vaccinated": false
+            "is_vaccinated": true,
+            "vaccine_details": [
+                {
+                    "vaccine_name": ["pfizer","pfizer"],
+                    "vaccinated_date": ["12 august 2021","2 september 2021"],
+                    "vaccineated_dose": "2"
+                }
+            ]
         },
         {
             "id": "12",
@@ -170,7 +177,14 @@
             "surname": "number2",
             "age": "31",
             "home_town": "Mars",
-            "is_vaccinated": false
+            "is_vaccinated": true,
+            "vaccine_details": [
+                {
+                    "vaccine_name": ["sinopham","pfizer"],
+                    "vaccinated_date": ["12 august 2021","2 september 2021"],
+                    "vaccineated_dose": "2"
+                }
+            ]
         },
         {
             "id": "13",
@@ -178,7 +192,14 @@
             "surname": "number3",
             "age": "32",
             "home_town": "Sun",
-            "is_vaccinated": false
+            "is_vaccinated": true,
+            "vaccine_details": [
+                {
+                    "vaccine_name": ["moderna","sinopham"],
+                    "vaccinated_date": ["12 august 2021","2 september 2021"],
+                    "vaccineated_dose": "2"
+                }
+            ]
         }
     ]
 }
