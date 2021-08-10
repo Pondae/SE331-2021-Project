@@ -19,7 +19,7 @@
       <div class="col-sm-2"></div>
       <label class="col-sm-2 col-form-label">Recommend:</label>
       <div class="col-sm-5">
-        <textarea type="text" class="form-control" v-model="recommend" />
+        <textarea type="text" class="form-control" v-model="recommend" v-on:keyup="limiter(this, 5)"/>
       </div>
     </div>
     <br />

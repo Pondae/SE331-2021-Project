@@ -69,11 +69,6 @@ export default {
   components: {
     Vaccinedetail,
   },
-  data() {
-    return {
-      covid: null,
-    };
-  },
 };
 </script>
 <style scoped>

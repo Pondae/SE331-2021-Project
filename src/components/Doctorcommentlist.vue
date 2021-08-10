@@ -21,8 +21,8 @@ export default {
     comments: {
       type: Array,
       required: true,
-    },
-  },
+    }
+  }
 };
 </script>
 <style scoped>
@@ -34,6 +34,7 @@ export default {
   border-radius: 1px black;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0.2cm;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
