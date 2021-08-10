@@ -9,8 +9,8 @@ const patient_api = axios.create({
 });
 
 export default {
-  get_all_patient(page,limit) {
-    return patient_api.get("/patient?_limit="+limit+'&_page='+page);
+  get_all_patient(page, limit) {
+    return patient_api.get("/patient?_limit=" + limit + "&_page=" + page);
   },
   get_patient_id(id) {
     return patient_api.get("/patient/" + id);

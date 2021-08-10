@@ -21,7 +21,7 @@ const routes = [
     path: "/list",
     name: "list",
     component: list,
-    props: (url)=>({page:parseInt(url.query.page||1)})
+    props: (url) => ({ page: parseInt(url.query.page || 1) }),
   },
   {
     path: "/patient/:id",

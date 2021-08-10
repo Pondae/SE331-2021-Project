@@ -9,12 +9,11 @@
       Doctor_comment
     </router-link>
     |
-    <router-link :to="{ name: 'Dates', params: { id } }"> Date </router-link>
+    <router-link :to="{ name: 'Dates', params: { id } }"> Vaccine </router-link>
 
     <router-view :patient="patient" />
   </div>
   <!-- </div> -->
-  
 </template>
 
 <script>

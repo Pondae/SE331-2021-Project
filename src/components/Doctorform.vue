@@ -1,11 +1,4 @@
 <template>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-    crossorigin="anonymous"
-  />
-
   <form @submit.prevent="onSubmit">
     <h3 id="toptext">Leave a doctor’s comments</h3>
     <div class="form-group row" id="topic">
@@ -29,10 +22,10 @@
         <textarea type="text" class="form-control" v-model="recommend" />
       </div>
     </div>
-    <br/>
+    <br />
     <div class="row">
-       <div class="col-sm-7"></div>
-        &nbsp;&nbsp;
+      <div class="col-sm-7"></div>
+      &nbsp;&nbsp;
       <div class="col-sm-2">
         <button type="submit" class="btn btn-primary mb-2">
           Confirm identity

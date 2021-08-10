@@ -1,10 +1,10 @@
 <template>
-    <div v-if="covid">
-        <p>Hospitalized: {{ covid.hospitalized }}</p>
-        <p>Pending: {{ covid.pending }}</p>
-        <p>Total case: {{ covid.total_case }}</p>
-        <p>Death: {{ covid.death }}</p>
-    </div>
+  <div v-if="covid">
+    <p>Hospitalized: {{ covid.hospitalized }}</p>
+    <p>Pending: {{ covid.pending }}</p>
+    <p>Total case: {{ covid.total_case }}</p>
+    <p>Death: {{ covid.death }}</p>
+  </div>
 </template>
 
 <script>
@@ -13,10 +13,10 @@
 export default {
   name: "Static",
   props: {
-      covid: {
-          type: Object,
-          required: true,
-      },
+    covid: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
