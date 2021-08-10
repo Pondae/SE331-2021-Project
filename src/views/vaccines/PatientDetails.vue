@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  props: ["patient"],
+ inject:["Global_Store"],
 };
 </script>
