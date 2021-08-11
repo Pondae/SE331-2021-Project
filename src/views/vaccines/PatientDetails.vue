@@ -14,10 +14,27 @@
           <div class="card-body">
             <div class="d-flex flex-column align-items-center text-center">
               <img
-                src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                v-if="assignuser"
+                :src="assignuser"
                 alt="Admin"
                 class="rounded-circle"
                 width="150"
+              />
+              <img
+                v-if="assignlisa"
+                :src="assignlisa"
+                alt="Admin"
+                class="rounded-circle"
+                width="200"
+                height="190"
+              />
+              <img
+                v-if="assignjisoo"
+                :src="assignjisoo"
+                alt="Admin"
+                class="rounded-circle"
+                width="220"
+                height="200"
               />
               <div class="mt-3">
                 <h4>{{ patient.name }} {{ patient.surname }}</h4>
@@ -69,7 +86,7 @@
               <div class="col-sm-3">
                 <h6 class="mb-0">Age</h6>
               </div>
-              <div class="col-sm-9 text-secondary">{{patient.age}}</div>
+              <div class="col-sm-9 text-secondary">{{ patient.age }}</div>
             </div>
             <hr />
             <div class="row">
@@ -250,6 +267,68 @@
 export default {
   props: ["patient"],
   inject: ["Global_Store"],
+  data() {
+    return {
+      check: 0,
+      image: "",
+      jisoo:
+        "https://www.allkpop.com/upload/2021/07/content/072126/1625707575-20210707-jisoo.jpg",
+      lisa: "https://malaysia-grlk5lagedl.stackpathdns.com/production/malaysia/images/1603076433196362-MAC-New-Global-Ambassador-Lisa-from-BLACKPINK-KV.jpg?w=1920&h=800&fit=fillmax&crop=faces&auto=%5B%22format%22%2C%20%22compress%22%5D&cs=srgb",
+      image1: "https://bootdey.com/img/Content/avatar/avatar3.png",
+      image2: "https://bootdey.com/img/Content/avatar/avatar7.png",
+      image3: "https://bootdey.com/img/Content/avatar/avatar1.png",
+      image4: "https://bootdey.com/img/Content/avatar/avatar5.png",
+      image5: "https://bootdey.com/img/Content/avatar/avatar4.png",
+    };
+  },
+  computed: {
+    imgUrl: function () {
+      // let val = Math.floor(Math.random() * 4);
+      // if (val == 0) {
+      //   return this.image1;
+      // } else if (val == 1) {
+      //   return this.image2;
+      // } else if (val == 2) {
+      //   return this.image3;
+      // } else if (val == 3) {
+      //   return this.image4;
+      // } else if (val == 4) {
+      //   return this.image5;
+      // }
+      return this.image;
+    },
+    assignlisa: function () {
+      if (this.patient.name === "Lalisa") {
+        return this.lisa;
+      }
+      return this.image;
+    },
+    assignjisoo: function () {
+      if (this.patient.name === "Kim") {
+        return this.jisoo;
+      }
+      return this.image;
+    },
+    assignuser: function () {
+      if (this.patient.name === "Kim" || this.patient.name === "Lalisa") {
+        return false;
+      } else {
+        let val = Math.floor(Math.random() * 4);
+        if (val == 0) {
+          return this.image1;
+        } else if (val == 1) {
+          return this.image2;
+        } else if (val == 2) {
+          return this.image3;
+        } else if (val == 3) {
+          return this.image4;
+        } else if (val == 4) {
+          return this.image5;
+        }
+      }
+      return false;
+    },
+  },
 };
 </script>
 <style scoped>
@@ -383,6 +462,3 @@ body {
   border-right: 3px dotted rgb(156, 170, 220);
 }
 </style>
-
-
-

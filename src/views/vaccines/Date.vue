@@ -16,7 +16,7 @@
         <div class="col">
           <h3 id="topic-vac">
             VACCINES's DETAILS
-            <hr style="border-width: 3px">
+            <hr style="border-width: 3px" />
           </h3>
         </div>
       </div>
@@ -24,7 +24,7 @@
 
     <div class="row" id="rowcontact">
       <div class="col-md-5" id="divedpage">
-        <br>
+        <br />
         <div id="tex">CONTACTS</div>
         <ul>
           <li id="hide">
@@ -37,9 +37,9 @@
             <span style="font-size: x-large">⌂</span>: 183,Evagadiant,Thailand
           </li>
         </ul>
-        <br>
+        <br />
         <div id="ABOUT_VACCINES">ABOUT VACCINES</div>
-        <br>
+        <br />
         <div class="row">
           <div class="col" id="A">
             <p>
@@ -48,11 +48,11 @@
             </p>
           </div>
         </div>
-        <br>
+        <br />
       </div>
 
       <div class="col-sm-7">
-        <br>
+        <br />
         <div class="row">
           <div class="col-sm-5">
             <div id="tex">VACCINES</div>
@@ -65,7 +65,7 @@
           <Vaccinedetail :patient="Global_Store.patient" />
           <!-- <Vaccinedetail :patient="data" /> -->
         </div>
-        <br>
+        <br />
       </div>
     </div>
   </div>
