@@ -16,7 +16,7 @@
         <div class="col">
           <h3 id="topic-vac">
             VACCINES's DETAILS
-            <hr style="border-width: 3px" />
+            <hr style="border-width: 3px">
           </h3>
         </div>
       </div>
@@ -24,23 +24,22 @@
 
     <div class="row" id="rowcontact">
       <div class="col-md-5" id="divedpage">
-        <br />
+        <br>
         <div id="tex">CONTACTS</div>
         <ul>
           <li id="hide">
-            <span style="font-size: x-large">✆</span><u>:(+66)123456</u>
+            <span style="font-size: x-large">✆</span>: (+66)123456
           </li>
           <li id="hide">
-            <span>✉:</span><a href="" id="li1"><u> konghospital.go.th </u></a>
+            <span>✉</span><a href="" id="li1">: <u>konghospital.go.th</u> </a>
           </li>
           <li id="hide">
-            <span style="font-size: x-large">⌂</span
-            ><u>:183,Evagadiant,Thailand</u>
+            <span style="font-size: x-large">⌂</span>: 183,Evagadiant,Thailand
           </li>
         </ul>
-        <br />
+        <br>
         <div id="ABOUT_VACCINES">ABOUT VACCINES</div>
-
+        <br>
         <div class="row">
           <div class="col" id="A">
             <p>
@@ -49,24 +48,24 @@
             </p>
           </div>
         </div>
-        <br />
+        <br>
       </div>
 
       <div class="col-sm-7">
-        <br />
+        <br>
         <div class="row">
           <div class="col-sm-5">
             <div id="tex">VACCINES</div>
           </div>
           <div class="col-sm-5">
-            <div id="tex">Total_dose: {{ patient.vaccine_details.length }}</div>
+            <div id="tex">Total Dose: {{ patient.vaccine_details.length }}</div>
           </div>
         </div>
         <div>
           <Vaccinedetail :patient="Global_Store.patient" />
           <!-- <Vaccinedetail :patient="data" /> -->
         </div>
-        <br />
+        <br>
       </div>
     </div>
   </div>

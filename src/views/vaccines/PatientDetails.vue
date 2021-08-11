@@ -24,15 +24,14 @@
               </div>
             </div>
           </div>
-
           <ul id="side">
             <li id="hide">
-              <span style="font-size: x-large">✆</span><u>:(+66)123456</u>
+              <span style="font-size: x-large">✆</span>: (+66)123456
             </li>
             <li id="hide">
-              <span>✉:</span
+              <span>✉: </span
               ><a href="" id="li1"
-                ><u> {{ patient.name }}_{{ patient.surname }}.gmail.com </u></a
+                ><u>{{ patient.name }}@gmail.com </u></a
               >
             </li>
           </ul>
@@ -43,7 +42,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-sm-3">
-                <h6 class="mb-0">Full Name</h6>
+                <h6 class="mb-0">Fullname</h6>
               </div>
               <div class="col-sm-9 text-secondary">
                 {{ patient.name }} {{ patient.surname }}
@@ -55,27 +54,27 @@
                 <h6 class="mb-0">Email</h6>
               </div>
               <div class="col-sm-9 text-secondary">
-                {{ patient.name }}_{{ patient.surname }}.gmail.com
+                {{ patient.name }}@gmail.com
               </div>
             </div>
             <hr />
             <div class="row">
               <div class="col-sm-3">
-                <h6 class="mb-0">Phone</h6>
+                <h6 class="mb-0">Telephone</h6>
               </div>
               <div class="col-sm-9 text-secondary">(+66)5432541</div>
             </div>
             <hr />
             <div class="row">
               <div class="col-sm-3">
-                <h6 class="mb-0">AGE</h6>
+                <h6 class="mb-0">Age</h6>
               </div>
               <div class="col-sm-9 text-secondary">{{patient.age}}</div>
             </div>
             <hr />
             <div class="row">
               <div class="col-sm-3">
-                <h6 class="mb-0">Address</h6>
+                <h6 class="mb-0">Hometown</h6>
               </div>
               <div class="col-sm-9 text-secondary">
                 {{ patient.home_town }}
