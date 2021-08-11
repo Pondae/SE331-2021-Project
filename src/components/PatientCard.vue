@@ -1,5 +1,8 @@
 <template>
-  <router-link class="link" :to="{ name: 'PatientDetails', params: { id: patient.id } }">
+  <router-link
+    class="link"
+    :to="{ name: 'PatientDetails', params: { id: patient.id } }"
+  >
     <div class="card">
       <div class="card-body">
         <span>
@@ -7,7 +10,7 @@
         </span>
         <h3 v-if="patient.is_vaccinated">already vaccinated</h3>
         <h3 v-else>not yet vaccinated</h3>
-        <hr>
+        <hr />
         <span>
           <p>{{ dose[patient.vaccine_details.length] }}</p>
         </span>
@@ -42,15 +45,15 @@ export default {
     },
   },
   data() {
-    return{
+    return {
       dose: [
         "Not yet",
         "Got the first dose",
         "Got the second dose",
         "Got the third dose",
         "Got the forth dose",
-      ]
-    }
-  }
+      ],
+    };
+  },
 };
 </script>
