@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
 import list from "@/views/patient_list.vue";
 import About from "../views/About.vue";
 import PatientLayout from "@/views/vaccines/Layout.vue";
@@ -14,19 +13,14 @@ import PNotFound from '@/views/404Patient.vue'
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "list",
+    component: list,
+    props: (url) => ({ page: parseInt(url.query.page || 1) }),
   },
   {
     path: "/about",
     name: "About",
     component: About,
-  },
-  {
-    path: "/list",
-    name: "list",
-    component: list,
-    props: (url) => ({ page: parseInt(url.query.page || 1) }),
   },
   {
     path: "/patient/:id",
