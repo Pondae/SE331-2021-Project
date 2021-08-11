@@ -39,6 +39,7 @@ export default {
 <style scoped>
 .container {
   text-align: left;
+  max-width: 90%;
 }
 .col-6 {
   border: 1px solid black;

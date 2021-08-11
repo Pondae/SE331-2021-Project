@@ -123,7 +123,10 @@
             "home_town": "Korean",
             "is_vaccinated": true,
             "vaccine_details": [
-                
+                {
+                    "vaccine_name": "pfizer",
+                    "vaccinated_date": "12 august 2021"
+                }
             ]
         },
         {

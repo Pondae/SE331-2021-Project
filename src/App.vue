@@ -1,8 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>|
-    <router-link to="/list">see all patients</router-link>
+    <router-link to="/about">About</router-link>
   </div>
   <router-view />
 </template>
@@ -29,15 +28,10 @@
   color: #42b983;
 }
 #nprogress .bar {
-  background: #ffbb00 !important;
+  background: #42b983!important;
 }
 
 #nprogress .peg {
-  box-shadow: 0 0 10px #ffbb00, 0 0 5px #ffbb00;
-}
-
-#nprogress .spinner-icon {
-  border-top-color: #ffbb00;
-  border-left-color: #ffbb00;
+  box-shadow: 0 0 10px #1B65A6, 0 0 5px #1B65A6;
 }
 </style>
