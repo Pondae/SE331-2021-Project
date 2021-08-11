@@ -29,16 +29,15 @@
   color: #42b983;
 }
 #nprogress .bar {
-  background: #FFBB00 !important;
+  background: #ffbb00 !important;
 }
 
 #nprogress .peg {
-  box-shadow: 0 0 10px #FFBB00, 0 0 5px #FFBB00;
+  box-shadow: 0 0 10px #ffbb00, 0 0 5px #ffbb00;
 }
 
 #nprogress .spinner-icon {
-  border-top-color: #FFBB00;
-  border-left-color: #FFBB00;
-  
+  border-top-color: #ffbb00;
+  border-left-color: #ffbb00;
 }
 </style>

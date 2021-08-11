@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  props:["id"],
+  props: ["id"],
   inject: ["Global_Store"],
 };
 </script>

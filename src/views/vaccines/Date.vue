@@ -39,25 +39,34 @@
           </li>
         </ul>
         <br />
-        <div id="tex">VACCINES</div>
-        <Vaccinedetail :patient="Global_Store.patient" />
-        <br />
-      </div>
-
-      <div class="col-7">
-        <br />
-
         <div id="ABOUT_VACCINES">ABOUT VACCINES</div>
 
         <div class="row">
           <div class="col" id="A">
             <p>
-              Our website have objective to give you an information of
-              covid-19,<br />
+              Our website have objective to give you an information of covid-19,
               including the people who vancinated, a total of vaccine doses.
             </p>
           </div>
         </div>
+        <br />
+      </div>
+
+      <div class="col-sm-7">
+        <br />
+        <div class="row">
+          <div class="col-sm-5">
+            <div id="tex">VACCINES</div>
+          </div>
+          <div class="col-sm-5">
+            <div id="tex">Total_dose: {{ patient.vaccine_details.length }}</div>
+          </div>
+        </div>
+        <div>
+          <Vaccinedetail :patient="Global_Store.patient" />
+          <!-- <Vaccinedetail :patient="data" /> -->
+        </div>
+        <br />
       </div>
     </div>
   </div>
@@ -66,7 +75,7 @@
 import Vaccinedetail from "@/components/Vaccinedetail.vue";
 export default {
   props: ["patient"],
-  inject:["Global_Store"],
+  inject: ["Global_Store"],
   components: {
     Vaccinedetail,
   },
@@ -107,6 +116,7 @@ export default {
 #tex {
   padding-left: 65px;
   font-size: x-large;
+  margin-bottom: 0.5cm;
 }
 
 #ABOUT_VACCINES {

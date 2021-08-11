@@ -24,7 +24,7 @@ import Doctorform from "@/components/Doctorform.vue";
 import Doctorcommentlist from "@/components/Doctorcommentlist.vue";
 export default {
   name: "Doctorcomment",
-  inject:["Global_Store"],
+  inject: ["Global_Store"],
   props: ["patient"],
 
   components: {

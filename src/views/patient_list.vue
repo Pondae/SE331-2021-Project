@@ -1,5 +1,4 @@
 <template>
-
   <div class="list">
     <card v-for="patient in patients" :key="patient.id" :patient="patient"
       >{{ patient.name }} {{ patient.surname }}

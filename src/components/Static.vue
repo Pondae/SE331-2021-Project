@@ -12,23 +12,14 @@
         <div class="col-12">
           <h1>Covid-19 Statistics</h1>
         </div>
-        <div class="col-6">
-          Hospitalized: {{ covid.hospitalized }}
-        </div>
-        <div class="col-6">
-          Pending: {{ covid.pending }}
-        </div>
+        <div class="col-6">Hospitalized: {{ covid.hospitalized }}</div>
+        <div class="col-6">Pending: {{ covid.pending }}</div>
         <div class="w-100"></div>
-        <div class="col-6">
-          Total case: {{ covid.total_case }}
-        </div>
-        <div class="col-6">
-          Death: {{ covid.death }}
-        </div>
+        <div class="col-6">Total case: {{ covid.total_case }}</div>
+        <div class="col-6">Death: {{ covid.death }}</div>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -55,10 +46,9 @@ export default {
 }
 .col-12 {
   text-align: center;
-  padding: 18px 0 10px  0;
+  padding: 18px 0 10px 0;
   border: 1px solid #000;
-  background-color: #1B65A6;
-  color: #F2F2F2;
+  background-color: #1b65a6;
+  color: #f2f2f2;
 }
 </style>
-
