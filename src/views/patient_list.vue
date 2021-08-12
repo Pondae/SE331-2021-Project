@@ -1,15 +1,22 @@
 <template>
+  <br><br>
   <Static :covid="covid" />
   <br><br>
   <h1>List of People</h1>
   <div class="container">
-    <hr><br>
+    <hr />
+    <br />
     <div class="row">
-      <card class="col-sm-4" v-for="patient in patients" :key="patient.id" :patient="patient">
+      <card
+        class="col-sm-4"
+        v-for="patient in patients"
+        :key="patient.id"
+        :patient="patient"
+      >
       </card>
     </div>
   </div>
-  <br><br>
+  <br /><br />
 
   <div class="list">
     <div class="page_change">
@@ -31,14 +38,14 @@
       </router-link>
     </div>
   </div>
-  <br><br>
-    <div class="details">
-      <p>
-        Our website have objective to give you an information of covid-19,<br />
-        including the people who vancinated, a total of vaccine doses.
-      </p>
-    </div>
-  <br><br>
+  <br /><br />
+  <div class="details">
+    <p>
+      Our website have objective to give you an information of covid-19,<br />
+      including the people who vancinated, a total of vaccine doses.
+    </p>
+  </div>
+  <br /><br />
 </template>
 <script>
 import api from "@/services/patient_api.js";
@@ -56,7 +63,7 @@ export default {
 
   components: {
     card,
-    Static
+    Static,
   },
   data() {
     return {
@@ -68,7 +75,8 @@ export default {
   },
   created() {
     watchEffect(() => {
-      api.get_all_patient(this.page, this.size)
+      api
+        .get_all_patient(this.page, this.size)
         .then((response) => {
           this.patients = response.data;
           this.total_page = response.headers["x-total-count"];
@@ -77,13 +85,22 @@ export default {
           console.log(error);
         });
 
-      api.getData()
-      .then((response) => {
-        this.covid = response.data;
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      api
+        .getData()
+        .then((response) => {
+          this.covid = response.data;
+        })
+        .catch((error) => {
+          if (error.response && error.response.status == 404) {
+            return {
+              name: "404Patient",
+            };
+          } else {
+            return {
+              name: "network_error",
+            };
+          }
+        });
     });
   },
   computed: {

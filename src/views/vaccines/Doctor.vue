@@ -39,9 +39,18 @@ export default {
   },
   methods: {
     addcomment(allcomment) {
-      this.comments.push(allcomment);
-
-      console.log(allcomment);
+      setTimeout(() => {
+        this.comments.push(allcomment);
+        this.$flashMessage.remove("ko");
+      }, 1200);
+      this.$flashMessage.show({
+        type: "info",
+        title: "uploading suggestion",
+        text: `we're uploading your suggestion.`,
+        contentClass: "text",
+        group: "ko",
+        image: "https://c.tenor.com/I6kN-6X7nhAAAAAi/loading-buffering.gif",
+      });
     },
   },
 };

@@ -10,6 +10,7 @@ import notFound from "@/views/notFound.vue";
 import patient_api from "@/services/patient_api.js";
 import Global_Store from "@/store";
 import PNotFound from "@/views/404Patient.vue";
+import network_error from "@/views/network_error.vue";
 const routes = [
   {
     path: "/",
@@ -31,13 +32,16 @@ const routes = [
       return patient_api
         .get_patient_id(to.params.id)
         .then((response) => {
-          console.log("skd");
           Global_Store.patient = response.data;
         })
         .catch((error) => {
           if (error.response && error.response.status == 404) {
             return {
               name: "404Patient",
+            };
+          } else {
+            return {
+              name: "network_error",
             };
           }
         });
@@ -73,6 +77,11 @@ const routes = [
     path: "/404/patient",
     name: "404Patient",
     component: PNotFound,
+  },
+  {
+    path: "/network_error",
+    name: "network_error",
+    component: network_error,
   },
 ];
 

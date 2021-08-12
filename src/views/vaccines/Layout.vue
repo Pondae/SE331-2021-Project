@@ -1,7 +1,7 @@
 <template>
   <div v-if="Global_Store.patient">
     <div id="nav">
-      <router-link :to="{ name: 'PatientDetails', params: { id } }">
+      <!-- <router-link :to="{ name: 'PatientDetails', params: { id } }">
         Details
       </router-link>
       |
@@ -11,7 +11,7 @@
       |
       <router-link :to="{ name: 'Dates', params: { id } }">
         Vaccine
-      </router-link>
+      </router-link> -->
 
       <router-view :patient="Global_Store.patient" />
     </div>

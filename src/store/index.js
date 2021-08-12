@@ -1,2 +1,2 @@
 import { reactive } from "vue";
-export default reactive({ flashMessage: "", patient: null });
+export default reactive({ patient: null });

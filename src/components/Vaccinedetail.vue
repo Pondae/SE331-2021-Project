@@ -13,7 +13,7 @@
 <script>
 export default {
   props: ["patient"],
-}
+};
 </script>
 <style scoped>
 #hide {
