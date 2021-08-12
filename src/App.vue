@@ -1,5 +1,6 @@
 <template>
-<FlashMessage position="right bottom" time="1200" group="ko"/>
+<FlashMessage position="right bottom" time="1150" group="ko" style="text-align:center"/>
+
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -35,4 +36,14 @@
 #nprogress .peg {
   box-shadow: 0 0 10px #1b65a6, 0 0 5px #1b65a6;
 }
+.text{
+ text-align: center;
+ padding: 15px 100px 5px 100px ;
+
+}
+._vue-flash-msg-body__title{
+ color:#f2f2f2;
+ font-weight: bold;
+}
+
 </style>

@@ -45,10 +45,12 @@ export default {
       this.$flashMessage.remove('ko');
       },1200)
       this.$flashMessage.show({
-    type: 'success',
-    title: 'uploading suggestion',
-    message: `we're uploading your suggestion.`,
-    group:"ko"
+      type: 'info',
+      title: 'uploading suggestion',
+      text: `we're uploading your suggestion.`,
+      contentClass:"text",
+      group:"ko",
+      image:"https://c.tenor.com/I6kN-6X7nhAAAAAi/loading-buffering.gif"
 });
 
     },
@@ -71,4 +73,5 @@ export default {
 .col-sm-4 {
   margin-top: 0.2cm;
 }
+
 </style>
