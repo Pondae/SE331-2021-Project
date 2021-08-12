@@ -35,14 +35,17 @@
 #nprogress .peg {
   box-shadow: 0 0 10px #1b65a6, 0 0 5px #1b65a6;
 }
-.text{
- text-align: center;
- padding: 15px 100px 5px 100px ;
-
+.text {
+  text-align: center;
+  padding: 15px 100px 5px 100px;
 }
-._vue-flash-msg-body__title{
- color:#f2f2f2;
- font-weight: bold;
+._vue-flash-msg-body__title {
+  color: #f2f2f2;
+  font-weight: bold;
+}
+._vue-flash-msg-body_info {
+  z-index: 1;
+  position: relative;
 }
 
 /*menu bar */
