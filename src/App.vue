@@ -57,4 +57,8 @@
   color: #f2f2f2;
   font-weight: bold;
 }
+._vue-flash-msg-body_info {
+  z-index: 1;
+  position: relative;
+}
 </style>

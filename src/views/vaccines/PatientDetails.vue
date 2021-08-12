@@ -25,7 +25,7 @@
             </a>
           </div>
           <div class="col-sm-6">
-            <a class="btn-get-started scrollto"  id="button2">
+            <a class="btn-get-started scrollto" id="button2">
               <router-link class="link" :to="{ name: 'Dates', params: { id } }">
                 Vaccine
               </router-link>
@@ -185,11 +185,10 @@ export default {
 };
 </script>
 <style scoped>
-#button1{
-padding: 0 5cm ;
+#button1 {
+  padding: 0 5cm;
 }
-#button2{
-
+#button2 {
 }
 .link {
   text-decoration: none;
