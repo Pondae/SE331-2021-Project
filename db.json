@@ -1,9 +1,9 @@
 {
     "over_all": {
-        "death": 2,
-        "hospitalized": 13,
-        "total_case": 57,
-        "pending": 5
+        "death": 45000,
+        "hospitalized": 1000,
+        "total_case": 100000,
+        "pending": 1000
     },
     "patient": [
         {
