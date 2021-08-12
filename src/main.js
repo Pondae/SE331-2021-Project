@@ -3,5 +3,5 @@ import App from "./App.vue";
 import router from "./router";
 import Gstore from "./store";
 import "nprogress/nprogress.css";
-
-createApp(App).use(router).provide("Global_Store", Gstore).mount("#app");
+import FlashMessage from '@smartweb/vue-flash-message';
+createApp(App).use(router).use(FlashMessage).provide("Global_Store", Gstore).mount("#app");
