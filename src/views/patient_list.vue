@@ -1,6 +1,7 @@
 <template>
+  <br><br>
   <Static :covid="covid" />
-  <br /><br />
+  <br><br>
   <h1>List of People</h1>
   <div class="container">
     <hr />
