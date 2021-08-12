@@ -12,11 +12,16 @@
     "@smartweb/vue-flash-message": "^1.0.0-alpha.12",
     "axios": "^0.21.1",
     "bootstrap": "^5.1.0",
+    "chart.js": "^3.5.0",
     "core-js": "^3.6.5",
     "k-progress": "^1.5.0",
     "nprogress": "^0.2.0",
     "vue": "^3.0.0",
+
+    "vue-chartkick": "^1.1.0",
+
     "vue-flash-message": "^0.7.2",
+
     "vue-progressbar": "^0.7.5",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
