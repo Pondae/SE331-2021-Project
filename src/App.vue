@@ -1,5 +1,18 @@
 <template>
-<FlashMessage position="right bottom" time="1150" group="ko" style="text-align:center"/>
+  <!-- Image and text -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+    crossorigin="anonymous"
+  />
+
+  <FlashMessage
+    position="right bottom"
+    time="1150"
+    group="ko"
+    style="text-align: center"
+  />
 
   <div id="nav">
     <router-link to="/">Home</router-link> |
@@ -36,14 +49,12 @@
 #nprogress .peg {
   box-shadow: 0 0 10px #1b65a6, 0 0 5px #1b65a6;
 }
-.text{
- text-align: center;
- padding: 15px 100px 5px 100px ;
-
+.text {
+  text-align: center;
+  padding: 15px 100px 5px 100px;
 }
-._vue-flash-msg-body__title{
- color:#f2f2f2;
- font-weight: bold;
+._vue-flash-msg-body__title {
+  color: #f2f2f2;
+  font-weight: bold;
 }
-
 </style>

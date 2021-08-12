@@ -93,11 +93,11 @@ export default {
           if (error.response && error.response.status == 404) {
             return {
               name: "404Patient",
-            }
-          }else{
+            };
+          } else {
             return {
-              name: 'network_error'
-            }
+              name: "network_error",
+            };
           }
         });
     });
