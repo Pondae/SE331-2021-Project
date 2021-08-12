@@ -16,7 +16,14 @@
           <div class="row">
             <div class="col-12">Hospitalized: {{ covid.hospitalized }}</div>
             <div class="col-12">
-             <area-chart :data="{'2019-06-05': 300, '2019-07-14': 500, '2020-02-03': 1000, '2020-04-03': 1000}"></area-chart>
+              <area-chart
+                :data="{
+                  '2019-06-05': 300,
+                  '2019-07-14': 500,
+                  '2020-02-03': 1000,
+                  '2020-04-03': 1000,
+                }"
+              ></area-chart>
             </div>
           </div>
         </div>
@@ -24,7 +31,15 @@
           <div class="row">
             <div class="col-12">Pending: {{ covid.pending }}</div>
             <div class="col-12">
-              <area-chart id="pending" :data="{'2019-06-05': 300, '2019-07-14': 500, '2020-02-03': 200, '2020-04-03': 1000}"></area-chart>
+              <area-chart
+                id="pending"
+                :data="{
+                  '2019-06-05': 300,
+                  '2019-07-14': 500,
+                  '2020-02-03': 200,
+                  '2020-04-03': 1000,
+                }"
+              ></area-chart>
             </div>
           </div>
         </div>
@@ -34,7 +49,14 @@
             <div class="col-12">Total case: {{ covid.total_case }}</div>
 
             <div class="col-12">
-              <area-chart :data="{'2019-06-05': 300, '2019-07-14': 500, '2020-02-03': 20000, '2020-04-03': 100000}"></area-chart>
+              <area-chart
+                :data="{
+                  '2019-06-05': 300,
+                  '2019-07-14': 500,
+                  '2020-02-03': 20000,
+                  '2020-04-03': 100000,
+                }"
+              ></area-chart>
             </div>
           </div>
         </div>
@@ -43,7 +65,14 @@
             <div class="col-12">Death: {{ covid.death }}</div>
 
             <div class="col-12">
-              <area-chart :data="{'2019-06-05': 300, '2019-07-14': 1000, '2020-02-03': 40000, '2020-04-03': 45000}"></area-chart>
+              <area-chart
+                :data="{
+                  '2019-06-05': 300,
+                  '2019-07-14': 1000,
+                  '2020-02-03': 40000,
+                  '2020-04-03': 45000,
+                }"
+              ></area-chart>
             </div>
           </div>
         </div>
@@ -67,9 +96,8 @@ export default {
 </script>
 
 <style scoped>
-#pending{
+#pending {
   color: rgb(153, 0, 255);
-  
 }
 .container {
   text-align: left;

@@ -1,5 +1,4 @@
 <template>
-
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -40,19 +39,18 @@ export default {
   },
   methods: {
     addcomment(allcomment) {
-      setTimeout(()=>{
+      setTimeout(() => {
         this.comments.push(allcomment);
-      this.$flashMessage.remove('ko');
-      },1200)
+        this.$flashMessage.remove("ko");
+      }, 1200);
       this.$flashMessage.show({
-      type: 'info',
-      title: 'uploading suggestion',
-      text: `we're uploading your suggestion.`,
-      contentClass:"text",
-      group:"ko",
-      image:"https://c.tenor.com/I6kN-6X7nhAAAAAi/loading-buffering.gif"
-});
-
+        type: "info",
+        title: "uploading suggestion",
+        text: `we're uploading your suggestion.`,
+        contentClass: "text",
+        group: "ko",
+        image: "https://c.tenor.com/I6kN-6X7nhAAAAAi/loading-buffering.gif",
+      });
     },
   },
 };
@@ -73,5 +71,4 @@ export default {
 .col-sm-4 {
   margin-top: 0.2cm;
 }
-
 </style>
