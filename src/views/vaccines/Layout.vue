@@ -5,10 +5,10 @@
         Details
       </router-link>
       |
-      <router-link :to="{ name: 'Doctorcomment', params: { id } }">
+      <!-- <router-link :to="{ name: 'Doctorcomment', params: { id } }">
         Doctor_comment
       </router-link>
-      |
+      | -->
       <router-link :to="{ name: 'Dates', params: { id } }">
         Vaccine
       </router-link>
