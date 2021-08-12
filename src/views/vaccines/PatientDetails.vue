@@ -7,7 +7,22 @@
   />
   <p></p>
   <!-- <div class="container"> -->
+
   <div class="main-body">
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <h1>Welcome to Konghospital</h1>
+        <h2>
+          We are willing to take care of you and advise you on the covid-19
+          outbreak and your symptoms.
+        </h2>
+        <a  class="btn-get-started scrollto">
+          <router-link class="link" :to="{ name: 'Doctorcomment' }">
+            Watch comment
+          </router-link>
+        </a>
+      </div>
+    </section>
     <div class="row gutters-sm">
       <div class="col-md-3 mb-2">
         <div class="card">
@@ -332,6 +347,90 @@ export default {
 };
 </script>
 <style scoped>
+.link {
+
+  text-decoration: none;
+}
+#hero {
+  width: 100%;
+  height: 90vh;
+  background: url("http://127.0.0.1:5500/assets/img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -200px;
+}
+
+#hero .container {
+  position: relative;
+}
+
+#hero h1 {
+  margin: 0;
+  -webkit-text-stroke: 1px black;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}
+
+#hero h2 {
+  color: #30618C;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 35px;
+  margin-top: 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #80b5e4;
+}
+
+#hero .btn-get-started:hover {
+  background: #618cb3;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    margin-bottom: 0;
+    height: 100vh;
+  }
+  #hero .container {
+    padding-bottom: 63px;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-height: 500px) {
+  #hero {
+    height: auto;
+  }
+}
+
 #side {
   text-align: left;
   padding: 0 18px;
