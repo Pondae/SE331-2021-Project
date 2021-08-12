@@ -90,7 +90,15 @@ export default {
           this.covid = response.data;
         })
         .catch((error) => {
-          console.log(error);
+          if (error.response && error.response.status == 404) {
+            return {
+              name: "404Patient",
+            }
+          }else{
+            return {
+              name: 'network_error'
+            }
+          }
         });
     });
   },

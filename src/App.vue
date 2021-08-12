@@ -1,4 +1,5 @@
 <template>
+<FlashMessage position="right bottom" time="1200" group="ko"/>
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>

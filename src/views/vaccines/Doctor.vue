@@ -1,4 +1,5 @@
 <template>
+
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -39,9 +40,17 @@ export default {
   },
   methods: {
     addcomment(allcomment) {
-      this.comments.push(allcomment);
+      setTimeout(()=>{
+        this.comments.push(allcomment);
+      this.$flashMessage.remove('ko');
+      },1200)
+      this.$flashMessage.show({
+    type: 'success',
+    title: 'uploading suggestion',
+    message: `we're uploading your suggestion.`,
+    group:"ko"
+});
 
-      console.log(allcomment);
     },
   },
 };
