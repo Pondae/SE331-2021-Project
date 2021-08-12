@@ -7,40 +7,80 @@
   />
 
   <div class="main-body">
-    <form @submit.prevent="onSubmit">
-      <h3 id="toptext">Leave a doctor’s comments</h3>
-      <div class="form-group row" id="topic">
-        <div class="col-sm-2"></div>
-        <label class="col-sm-2 col-form-label">Topic:</label>
-        <div class="col-sm-5">
-          <input type="text" class="form-control" v-model="topic" />
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <h1>Welcome to Konghospital</h1>
+        <h2>
+          We are willing to take care of you and advise you on the covid-19
+          outbreak and your symptoms.
+        </h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <a class="btn-get-started scrollto" id="button1">
+              <router-link
+                class="link"
+                :to="{ name: 'PatientDetails', params: { id } }"
+              >
+                Details
+              </router-link>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a class="btn-get-started scrollto" id="button2">
+              <router-link class="link" :to="{ name: 'Dates', params: { id } }">
+                Vaccine
+              </router-link>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="form-group row" id="name">
-        <div class="col-sm-2"></div>
-        <label class="col-sm-2 col-form-label">Name:</label>
-        <div class="col-sm-5">
-          <input type="text" class="form-control" v-model="name" />
+    </section>
+    <div class="row gutters-sm">
+      <div class="col-md">
+        <div class="card mb-3">
+          <div class="card-body">
+            <form @submit.prevent="onSubmit">
+              <h3 id="toptext">Leave a doctor’s comments</h3>
+              <div class="form-group row" id="topic">
+                <div class="col-sm-2"></div>
+                <label class="col-sm-2 col-form-label">Topic:</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" v-model="topic" />
+                </div>
+              </div>
+              <div class="form-group row" id="name">
+                <div class="col-sm-2"></div>
+                <label class="col-sm-2 col-form-label">Name:</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" v-model="name" />
+                </div>
+              </div>
+              <div class="form-group row" id="recommend">
+                <div class="col-sm-2"></div>
+                <label class="col-sm-2 col-form-label">Recommend:</label>
+                <div class="col-sm-5">
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    v-model="recommend"
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-sm-7"></div>
+                &nbsp;&nbsp;
+                <div class="col-sm-2">
+                  <button type="submit" class="btn btn-primary mb-2">
+                    Confirm identity
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="form-group row" id="recommend">
-        <div class="col-sm-2"></div>
-        <label class="col-sm-2 col-form-label">Recommend:</label>
-        <div class="col-sm-5">
-          <textarea type="text" class="form-control" v-model="recommend" />
-        </div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-sm-7"></div>
-        &nbsp;&nbsp;
-        <div class="col-sm-2">
-          <button type="submit" class="btn btn-primary mb-2">
-            Confirm identity
-          </button>
-        </div>
-      </div>
-    </form>
+    </div>
   </div>
 </template>
 <style scoped>
