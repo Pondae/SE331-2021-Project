@@ -17,8 +17,16 @@
     </div>
   </div>
   <router-view />
+  <footerLayout/>
 </template>
-
+<script>
+import footerLayout from '@/views/footer.vue'
+export default {
+  components:{
+    footerLayout
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
