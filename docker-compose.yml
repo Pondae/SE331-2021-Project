@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+    web:
+        image: "forio2/project331-1"
+        ports:
+            - 8019:80
