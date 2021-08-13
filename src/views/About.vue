@@ -51,7 +51,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .text img{
   width: 250px;
   height: 250px;
