@@ -38,14 +38,16 @@
       </router-link>
     </div>
   </div>
-
+<div class="footer">
+    <footerLayout />
+  </div>
 </template>
 <script>
 import api from "@/services/patient_api.js";
 import card from "@/components/PatientCard.vue";
 import Static from "@/components/Static.vue";
 import { watchEffect } from "@vue/runtime-core";
-
+import footerLayout from '@/views/footer.vue'
 export default {
   name: "list",
   props: {
@@ -58,7 +60,7 @@ export default {
   components: {
     card,
     Static,
-   
+   footerLayout
   },
   data() {
     return {
@@ -107,6 +109,12 @@ export default {
 };
 </script>
 <style scoped>
+  .footer {
+   position: relative;
+  margin-top: 0;
+  bottom:0px;
+  width:100%;
+  }
 .list {
   display: flex;
   align-items: center;
