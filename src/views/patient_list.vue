@@ -38,20 +38,14 @@
       </router-link>
     </div>
   </div>
-  <br /><br />
-  <div class="details">
-    <p>
-      Our website have objective to give you an information of covid-19,<br />
-      including the people who vancinated, a total of vaccine doses.
-    </p>
-  </div>
-  <br /><br />
+
 </template>
 <script>
 import api from "@/services/patient_api.js";
 import card from "@/components/PatientCard.vue";
 import Static from "@/components/Static.vue";
 import { watchEffect } from "@vue/runtime-core";
+
 export default {
   name: "list",
   props: {
@@ -64,6 +58,7 @@ export default {
   components: {
     card,
     Static,
+   
   },
   data() {
     return {
