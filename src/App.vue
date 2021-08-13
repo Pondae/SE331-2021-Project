@@ -17,7 +17,9 @@
     </div>
   </div>
   <router-view />
-  <footerLayout/>
+  <div class="footer">
+    <footerLayout />
+  </div>
 </template>
 <script>
 import footerLayout from '@/views/footer.vue'
@@ -28,6 +30,11 @@ export default {
 }
 </script>
 <style>
+.footer{
+  clear: both;
+  position: relative;
+  margin-top: 10%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
