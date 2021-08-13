@@ -1,9 +1,14 @@
 <template>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/menu.css">
-<FlashMessage position="right bottom" time="1150" group="ko" style="text-align:center"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <FlashMessage
+    position="right bottom"
+    time="1150"
+    group="ko"
+    style="text-align: center"
+  />
   <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
+    <input type="checkbox" class="toggler" />
     <div class="hamburger"><div></div></div>
     <div class="menu">
       <div>
@@ -17,24 +22,16 @@
     </div>
   </div>
   <router-view />
-  <div class="footer">
-    <footerLayout />
-  </div>
+
 </template>
 <script>
-import footerLayout from '@/views/footer.vue'
 export default {
-  components:{
-    footerLayout
-  }
-}
+  components: {
+    
+  },
+};
 </script>
 <style>
-.footer{
-  clear: both;
-  position: relative;
-  margin-top: 10%;
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -111,7 +108,7 @@ export default {
 /* Hamburger Lines - Top & Bottom */
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: -10px;
@@ -119,9 +116,6 @@ export default {
   height: 2px;
   background: inherit;
 }
-
-
-
 
 /* Moves Line Down */
 .menu-wrap .hamburger > div::after {
@@ -157,11 +151,8 @@ export default {
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  transition:  opacity 0.4s ease 0.4s;
+  transition: opacity 0.4s ease 0.4s;
 }
-
-
-
 
 .menu-wrap .menu {
   position: fixed;
@@ -175,7 +166,6 @@ export default {
   justify-content: center;
 }
 
-
 .menu-wrap .menu > div > div {
   text-align: center;
   max-width: 90vw;
@@ -186,13 +176,13 @@ export default {
 
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: #F2F2F2;
-  background-color: rgba(48, 97, 140, .95);
+  color: #f2f2f2;
+  background-color: rgba(48, 97, 140, 0.95);
   border: 1px solid black;
   margin: 5px;
   border-radius: 5px;
   font-size: 1.5rem;
-  padding: 8px 20px ;
+  padding: 8px 20px;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
@@ -201,6 +191,12 @@ export default {
   transition: color 0.4s ease;
 }
 
-
-
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#footer {
+  margin-top: auto;
+}
 </style>

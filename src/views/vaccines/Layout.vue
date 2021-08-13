@@ -16,11 +16,27 @@
       <router-view :patient="Global_Store.patient" />
     </div>
   </div>
+  <div class="footer">
+    <footerLayout />
+  </div>
 </template>
 
 <script>
+import footerLayout from '@/views/footer.vue'
 export default {
+  
   props: ["id"],
   inject: ["Global_Store"],
+  components:{
+    footerLayout
+  }
 };
 </script>
+<style scoped>
+ .footer {
+   position: relative;
+  margin-top: 0;
+  bottom:0px;
+  width:100%;
+  }
+</style>

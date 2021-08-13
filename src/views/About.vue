@@ -49,9 +49,25 @@
     </div>
     <br>
   </div>
+  <div class="footer">
+    <footerLayout />
+  </div>
 </template>
-
+,<script>
+import footerLayout from '@/views/footer.vue'
+export default {
+  components:{
+    footerLayout
+  }
+}
+</script>
 <style scoped>
+  .footer {
+   position: fixed;
+  margin-top: 0;
+  bottom:0px;
+  width:100%;
+  }
 .text img{
   width: 250px;
   height: 250px;
