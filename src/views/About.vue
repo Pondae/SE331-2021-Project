@@ -63,10 +63,9 @@ export default {
 </script>
 <style scoped>
   .footer {
-   position: fixed;
-  margin-top: 0;
-  bottom:0px;
-  width:100%;
+   position: relative;
+   bottom: 0;
+
   }
 .text img{
   width: 250px;
@@ -79,7 +78,7 @@ export default {
 
 .container{
   max-width: 1200px;
-  padding: 0 40px;
+  padding: 0 1% 7.5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
