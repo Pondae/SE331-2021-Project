@@ -46,8 +46,8 @@
 import api from "@/services/patient_api.js";
 import card from "@/components/PatientCard.vue";
 import Static from "@/components/Static.vue";
-import { watchEffect } from "@vue/runtime-core";
 import footerLayout from '@/views/footer.vue'
+
 export default {
   name: "list",
   props: {
@@ -71,17 +71,6 @@ export default {
     };
   },
   created() {
-    watchEffect(() => {
-      api
-        .get_all_patient(this.page, this.size)
-        .then((response) => {
-          this.patients = response.data;
-          this.total_page = response.headers["x-total-count"];
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-
       api
         .getData()
         .then((response) => {
@@ -98,7 +87,28 @@ export default {
             };
           }
         });
-    });
+  },
+  beforeRouteEnter(routeTo, routeFrom, next) {
+    api.get_all_patient(parseInt(routeTo.query.page) || 1,6)
+      .then((response) => {
+        next((comp) => {
+          comp.patients = response.data
+          comp.total_page = response.headers['x-total-count']
+        })
+      })
+      .catch(() => {
+        next({ name: 'network_error' })
+      })
+  },
+  beforeRouteUpdate(routeTo) {
+    api.get_all_patient(parseInt(routeTo.query.page) || 1 ,6)
+      .then((response) => {
+        this.patients = response.data // <-----
+        this.total_page = response.headers['x-total-count'] // <-----
+      })
+      .catch(() => {
+        return { name: 'network_error' }
+      })
   },
   computed: {
     has_next_page() {
